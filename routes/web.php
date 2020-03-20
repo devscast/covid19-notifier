@@ -14,10 +14,10 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return response(json_encode('hello world'));
+    return redirect('/dashboard');
 });
 
-Auth::routes();
+Auth::routes(['register' => false]);
 Route::get('/dashboard', 'HomeController@index')->name('dashboard');
 Route::get('/notifications', 'NotificationsController@index')->name('notification.index');
-Route::post('/notifications', 'NotificationsController@new')->name('notification.new');
+Route::post('/notifications', 'NotificationsController@create')->name('notification.create');
