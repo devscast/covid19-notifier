@@ -1,6 +1,8 @@
 # covid19-notifier
 
-send Sms notification : https://covid19notifier.devs-cast.com
+!! Please Read the LICENSE
+
+Send SMS Notification : https://covid19notifier.devs-cast.com
 
 ## install
 ```bash
