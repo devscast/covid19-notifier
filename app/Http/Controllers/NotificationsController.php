@@ -28,7 +28,7 @@ class NotificationsController extends Controller
     {
         $this->client = $client;
         $this->contacts = Http::withHeaders(['Accept' => 'application/json'])
-            ->get('https://covid19news.devs-cast.com/api/contacts')
+            ->get('https://covid19news.devs-cast.com/api/contacts?pagination=false')
             ->json();
     }
 
