@@ -3,7 +3,6 @@
 namespace App\Http\Controllers;
 
 use App\Http\Requests;
-use Illuminate\Http\RedirectResponse;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Http;
 use Twilio\Exceptions\TwilioException;
@@ -44,7 +43,7 @@ class NotificationsController extends Controller
 
     /**
      * @param Request $request
-     * @return RedirectResponse
+     * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
      * @author bernard-ng <ngandubernard@gmail.com>
      */
     public function create(Request $request)
@@ -65,7 +64,7 @@ class NotificationsController extends Controller
             }
         }
 
-        return redirect()->route('dashboard', compact('failed'));
+        return view('dashboard', compact('failed'));
     }
 
     /**
@@ -94,7 +93,7 @@ class NotificationsController extends Controller
     private function formatMessage($message)
     {
         return
-            "Covid19 RDC Alertes : \n\n" .
+            "Covid19 Info RDC : \n\n" .
             "$message \n\n" .
             "Info : https://bit.ly/3beCJ6o \n\n";
     }
