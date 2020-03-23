@@ -4,7 +4,40 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="csrf-token" content="{{ csrf_token() }}">
-    <title>{{ config('app.name', 'covid19 notifier') }}</title>
+    <title>Covid19 Notifier | Congo</title>
+
+    <meta http-equiv="X-UA-Compatible" content="IE=11.0000">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="content-language" content="fr">
+    <meta name="language" content="fr">
+    <meta name="copyright" content="bernard@devs-cast.com">
+    <meta name="author" content="bernard-ng <bernard@devs-cast.com>">
+    <meta name="identifier-url" content="https://covid19notifier.devs-cast.com">
+    <meta name="keywords" content="coronavirus, covid, congo, africa" lang="fr">
+    <meta name="revisit-after" content="7 days">
+    <meta name="twitter:card" content="summary"/>
+    <meta name="twitter:site" content="Covid19"/>
+    <meta name="twitter:creator" content="@BernardNgandu"/>
+
+    <meta property="og:language" content="fr">
+    <meta property="og:site_name" content="Covid19">
+    <meta name="description" content="Information sur l'évolution du covid19, plateforme d'alertes et signalement">
+    <meta property="og:description" content="Information sur l'évolution du covid19, plateforme d'alertes et signalement">
+    <meta property="og:image" content="https://www.countryflags.io/CD/flat/64.png">
+    <meta property="og:image:secure_url" content="https://www.countryflags.io/CD/flat/64.png"/>
+    <meta property="og:image:type" content="image/jpeg"/>
+    <meta property="og:image:width" content="400"/>
+    <meta property="og:image:height" content="400"/>
+    <meta property="og:image:alt" content="Covid19 - Logo"/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:url" content="https://covid19notifier.devs-cast.com">
+
+    <meta name="theme-color" content="#15db95">
+    <meta name="msapplication-TileColor" content="#15db95">
+    <meta name="msapplication-navbutton-color" content="#15db95">
+    <meta name="apple-mobile-web-app-status-bar-style" content="#15db95">
+    <link rel="icon" type="image/png" sizes="16x16" href="https://www.countryflags.io/CD/flat/64.png">
+
     <script src="{{ asset('js/app.js') }}" defer></script>
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
@@ -17,7 +50,7 @@
             <div class="flex items-center justify-between h-16">
                 <div class="flex items-center">
                     <div class="flex-shrink-0 text-white font-bold">
-                        DEVSCAST
+                        <img style="display: inline-block" class="h-10 w-10" src="https://www.countryflags.io/CD/flat/64.png" alt="cd"/>
                     </div>
                     <div class="hidden md:block">
                         <div class="ml-10 flex items-baseline">
