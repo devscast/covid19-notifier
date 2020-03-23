@@ -33,7 +33,7 @@
     </nav>
     <header class="bg-white shadow">
         <div class="max-w-5xl mx-auto py-4 px-4 sm:px-6 lg:px-6">
-            <h2 class="text-3xl font-bold leading-tight text-gray-900">
+            <h2 class="text-xl font-bold leading-tight text-gray-900">
                 Covid19 Notifier
             </h2>
         </div>
@@ -42,8 +42,10 @@
     <main class="max-w-6xl mx-auto px-4 sm:px-6 mt-10">
         @yield('content')
     </main>
-    <footer class='w-full text-gray-500 text-xs text-center mt-5 mb-5'>
-        <a href="https://twitter.com/BernardNgandu" target="_blank">Powered by @BernardNgandu</a>
+    <footer class='w-full text-gray-600 text-xs text-center mt-5 mb-5'>
+        Powered by <a href="https://devs-cast.com" target="_blank">devscast</a> & <a href="https://itot.africa" target="_blank">itotafrica</a>
+        <br><a href="https://www.jhu.edu/">Données Provenant de Johns Hopkins University</a>
+        <br><a href="#">Congo Digital Innovation</a>
     </footer>
 </div>
 </body>
