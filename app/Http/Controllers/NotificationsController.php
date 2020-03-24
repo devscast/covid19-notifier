@@ -108,7 +108,6 @@ class NotificationsController extends Controller
     {
         $formatted = [];
         foreach ($contacts as $contact) {
-
             $contact['number'] = str_replace(' ', '', $contact['number']);
 
             if (strpos($contact['number'], '+243') === 0) {
